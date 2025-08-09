@@ -1,38 +1,54 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
-    <nav className="bg-transparent flex justify-between items-center w-full p-[2rem] absolute top-0">
+    <nav className="bg-[#001d00] flex justify-between items-center w-full p-[2rem] fixed top-0 left-0 z-50">
       <Link to="/">
         <img
           src="https://res.cloudinary.com/dmixvynoo/image/upload/v1754755594/IMG-20250809-WA0269_mviipe-removebg-preview_uysk4f.png"
           alt="awande-african-logo"
-          className='w-[120px]'
+          className="w-[120px]"
         />
       </Link>
-      <ul className="flex items-center justify-center space-x-4 text-white text-[1.2rem] font-semibold">
-        <li>
+
+      {/* Mobile Menu Button */}
+      <button
+        className="text-white text-3xl md:hidden"
+        onClick={() => setIsOpen(!isOpen)}
+      >
+        ☰
+      </button>
+
+      {/* Menu Links */}
+      <ul
+        className={`flex-col md:flex-row md:flex items-center justify-center space-x-0 md:space-x-4 text-white text-[1.2rem] font-semibold absolute md:static top-[80px] left-0 w-full md:w-auto bg-[#001d00] md:bg-transparent transition-all duration-300 ease-in-out ${
+          isOpen ? "flex" : "hidden"
+        }`}
+      >
+        <li className="p-2 md:p-0">
           <Link to="/">Home</Link>
         </li>
-        <li>
+        <li className="p-2 md:p-0">
           <Link to="/about">About Us</Link>
         </li>
-        <li>
+        <li className="p-2 md:p-0">
           <Link to="/activities">Activities</Link>
         </li>
-        <li>
+        <li className="p-2 md:p-0">
           <Link to="/gallery">Gallery</Link>
         </li>
-        <li>
+        <li className="p-2 md:p-0">
           <Link to="/testimonials">Testimonials</Link>
         </li>
-        <li>
-          <Link to="contact">Contact Us</Link>
+        <li className="p-2 md:p-0">
+          <Link to="/contact">Contact Us</Link>
         </li>
       </ul>
     </nav>
   );
 }
 
-export default Navbar
+export default Navbar;

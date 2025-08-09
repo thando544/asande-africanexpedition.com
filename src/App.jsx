@@ -7,12 +7,14 @@ import Activities from "./pages/Activities"
 import Gallery from "./pages/Gallery"
 import Testimonials from "./pages/Testimonials"
 import Contact from "./pages/Contact"
+import Navbar from "./components/Navbar"
+
 
 function App() {
 
   return (
     <>
-    
+<Navbar/>
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='about' element={<About />} />
