@@ -16,7 +16,7 @@ function Navbar() {
 
       {/* Mobile Menu Button */}
       <button
-        className="text-white text-3xl md:hidden"
+        className="text-white text-3xl bg-[#001d00] md:hidden"
         onClick={() => setIsOpen(!isOpen)}
       >
         ☰
@@ -24,7 +24,7 @@ function Navbar() {
 
       {/* Menu Links */}
       <ul
-        className={`flex-col md:flex-row md:flex items-center justify-center space-x-0 md:space-x-4 text-white text-[1.2rem] font-semibold absolute md:static top-[80px] left-0 w-full md:w-auto bg-[#001d00] md:bg-transparent transition-all duration-300 ease-in-out ${
+        className={`flex-col md:flex-row md:flex items-center justify-center space-x-0 md:space-x-4 text-white text-[1.2rem] font-semibold absolute md:static top-[80px] left-0 w-full md:w-auto bg-[#001d00] md:bg-[#001d00] z-90 transition-all duration-300 ease-in-out ${
           isOpen ? "flex" : "hidden"
         }`}
       >
