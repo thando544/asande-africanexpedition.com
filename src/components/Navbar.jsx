@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 function Navbar() {
   return (
-    <nav className="bg-green-800 flex justify-between items-center w-full p-[2rem]">
+    <nav className="bg-transparent flex justify-between items-center w-full p-[2rem] absolute top-0">
       <Link to="/">
         <img
           src="https://res.cloudinary.com/dmixvynoo/image/upload/v1754755594/IMG-20250809-WA0269_mviipe-removebg-preview_uysk4f.png"
