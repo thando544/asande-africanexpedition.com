@@ -5,7 +5,7 @@ function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-[#001d00] flex justify-between items-center w-full px-[2rem] h-[14vh] ">
+    <nav className="bg-[#001d00] flex justify-between items-center w-full px-[2rem] h-[14vh] sticky top-0 z-50 ">
       <Link to="/">
         <img
           src="https://res.cloudinary.com/dmixvynoo/image/upload/v1754755594/IMG-20250809-WA0269_mviipe-removebg-preview_uysk4f.png"

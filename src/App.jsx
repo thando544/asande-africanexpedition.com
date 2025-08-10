@@ -8,20 +8,21 @@ import Gallery from "./pages/Gallery"
 import Testimonials from "./pages/Testimonials"
 import Contact from "./pages/Contact"
 import Navbar from "./components/Navbar"
-
+import TourDetails from './components/TourDetails'
 
 function App() {
 
   return (
     <>
-<Navbar/>
+      <Navbar />
       <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='about' element={<About />} />
-        <Route path='activities' element={<Activities/>} />
-        <Route path='gallery' element={<Gallery/>} />
-        <Route path='testimonials' element={<Testimonials/>} />
-        <Route path='contact' element={<Contact/>} />
+        <Route path="/" element={<Home />} />
+        <Route path="/tour/:id" element={<TourDetails />} />
+        <Route path="about" element={<About />} />
+        <Route path="activities" element={<Activities />} />
+        <Route path="gallery" element={<Gallery />} />
+        <Route path="testimonials" element={<Testimonials />} />
+        <Route path="contact" element={<Contact />} />
       </Routes>
     </>
   );

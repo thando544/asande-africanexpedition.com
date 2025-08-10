@@ -1,12 +1,67 @@
-import React from 'react'
-import Banner from '../components/Banner';
+import React from "react";
+import Banner from "../components/Banner";
+import { Link } from "react-router-dom";
+import { tours } from "../utils/data";
 
 function Home() {
   return (
-    <div className="  flex items-center justify-center w-full h-screen">
-   <Banner/>
-    </div>
+    <>
+      <div className="  flex items-center justify-center w-full h-screen">
+        <Banner />
+      </div>
+      <section>
+        <div className="w-full flex flex-col justify-center md:items-center lg:items-center items-start md:h-[50vh] lg:h-[50vh] h-[70vh] pb-[3rem] text-center px-[2em] space-y-[1em]">
+          <h1 className="text-black text-[1.2rem]">About Us</h1>
+          <p className="md:text-center lg:text-center text-left">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
+            doloremque consequatur molestias ipsa reprehenderit ad nam nostrum,
+            dolor commodi qui illum quos mollitia nesciunt in cumque blanditiis
+            et animi a? Eius reiciendis asperiores, molestiae consequatur
+            voluptates, minus dignissimos labore recusandae, quasi obcaecati
+            expedita velit tenetur repellat magni! Hic doloribus temporibus iure
+         
+          </p>
+          <Link
+            to="/about"
+            className="bg-red-700 h-[50px] w-[170px] text-white flex justify-center items-center hover:underline transition duration-550"
+          >
+            ReadMore
+          </Link>
+        </div>
+      </section>
+
+      <section className="h-[100vh]">
+        <h1 className="pl-6 font-bold">Our Recent Activities</h1>
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 p-6">
+          {tours.map((tour) => (
+            <div
+              key={tour.id}
+              className="bg-white rounded-lg shadow-lg overflow-hidden"
+            >
+              <img
+                src={tour.image}
+                alt={tour.title}
+                className="h-48 w-full object-cover scale-90 hover:scale-100"
+              />
+              <div className="p-4">
+                <h3 className="text-xl font-bold">{tour.title}</h3>
+                <p className="text-gray-600">{tour.description}</p>
+                <p className="mt-2 text-lg font-semibold text-red-600">
+                  {tour.price}
+                </p>
+                <Link
+                  to={`/tour/${tour.id}`}
+                  className="mt-4 inline-block bg-red-600 hover:bg-red-700 text-white px-4 py-2 hover:underline rounded"
+                >
+                  View Details
+                </Link>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+    </>
   );
 }
 
-export default Home
+export default Home;
