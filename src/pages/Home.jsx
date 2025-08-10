@@ -6,12 +6,7 @@ import { tours } from "../utils/data";
 function Home() {
   return (
     <>
-      <div
-        className={`items-center justify-center space-x-0 md:space-x-4 text-white text-[1.2rem] font-semibold absolute md:static top-[80px] left-0 w-full md:w-auto bg-[#001d00] md:bg-[#001d00] z-90 transition-all duration-300 ease-in-out ${
-          isOpen ? "flex" : "hidden"
-        }`}
-      >
-      
+      <div className="  flex items-center justify-center w-full h-screen">
         <Banner />
       </div>
       <section>
@@ -24,6 +19,7 @@ function Home() {
             et animi a? Eius reiciendis asperiores, molestiae consequatur
             voluptates, minus dignissimos labore recusandae, quasi obcaecati
             expedita velit tenetur repellat magni! Hic doloribus temporibus iure
+         
           </p>
           <Link
             to="/about"
@@ -45,7 +41,7 @@ function Home() {
               <img
                 src={tour.image}
                 alt={tour.title}
-                className="h-48 w-full object-cover scale-90 hover:scale-100"
+                className="h-48 w-full object-cover scale-10 hover:scale-100"
               />
               <div className="p-4">
                 <h3 className="text-xl font-bold">{tour.title}</h3>
