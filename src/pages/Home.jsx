@@ -19,7 +19,6 @@ function Home() {
             et animi a? Eius reiciendis asperiores, molestiae consequatur
             voluptates, minus dignissimos labore recusandae, quasi obcaecati
             expedita velit tenetur repellat magni! Hic doloribus temporibus iure
-         
           </p>
           <Link
             to="/about"

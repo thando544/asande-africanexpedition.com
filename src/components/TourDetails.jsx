@@ -6,7 +6,7 @@ export default function TourDetails() {
   const { id } = useParams();
   const tour = tours.find((t) => t.id === parseInt(id));
 
-  const [modalState, setModalState] = useState("closed"); // closed | open
+  const [modalState, setModalState] = useState("closed"); 
 
   if (!tour) {
     return <p className="p-6">Tour not found.</p>;
