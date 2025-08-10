@@ -41,7 +41,7 @@ function Home() {
               <img
                 src={tour.image}
                 alt={tour.title}
-                className="h-48 w-full object-cover scale-10 hover:scale-100"
+                className="h-48 w-full object-cover scale-90 hover:scale-100"
               />
               <div className="p-4">
                 <h3 className="text-xl font-bold">{tour.title}</h3>
