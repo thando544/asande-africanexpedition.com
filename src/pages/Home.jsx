@@ -13,12 +13,10 @@ function Home() {
         <div className="w-full flex flex-col justify-center md:items-center lg:items-center items-start md:h-[50vh] lg:h-[50vh] h-[70vh] pb-[3rem] text-center px-[2em] space-y-[1em]">
           <h1 className="text-black text-[1.2rem]">About Us</h1>
           <p className="md:text-center lg:text-center text-left">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
-            doloremque consequatur molestias ipsa reprehenderit ad nam nostrum,
-            dolor commodi qui illum quos mollitia nesciunt in cumque blanditiis
-            et animi a? Eius reiciendis asperiores, molestiae consequatur
-            voluptates, minus dignissimos labore recusandae, quasi obcaecati
-            expedita velit tenetur repellat magni! Hic doloribus temporibus iure
+            Being a safari guide, for more than 17years of experience in
+            conducting walking safaris gives me the confidence for ensuring a
+            safe, knowledgeable, and unforgettable adventure. Here’s why you
+            should consider me as your preferred choice:
           </p>
           <Link
             to="/about"

@@ -11,7 +11,6 @@ function Contact() {
       ></section>
 
       <section className="p-6 bg-[#c9c1c1] min-h-screen flex flex-col items-center">
-        {/* Heading */}
         <h1 className="text-green-900 border-dotted border-b-4 border-green-900 w-fit text-4xl md:text-5xl text-center py-4">
           Contact Us
         </h1>
@@ -20,9 +19,7 @@ function Contact() {
           details about dates and pricing on request.
         </p>
 
-        {/* Content */}
         <div className="flex flex-col md:flex-row w-full max-w-6xl mt-8 gap-6">
-          {/* Form Section */}
           <div className="flex flex-col w-full md:w-1/2 bg-[#bbb4b4] p-6  shadow-lg">
             <h2 className="text-green-900 text-2xl mb-4">Send Us A Message</h2>
             <form className="flex flex-col gap-4">
