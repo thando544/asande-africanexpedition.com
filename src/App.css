@@ -1,5 +1,6 @@
 html, body {
   @apply overflow-x-hidden;
+  font-family:    "Nata Sans", sans-serif;
 }
 
 ::-webkit-scrollbar{

@@ -4,7 +4,7 @@ function Contact() {
   return (
     <>
       <section
-        className="h-[75vh] w-full"
+        className="h-[75vh] w-full bg-center bg-cover bg-no-repeat"
         style={{
           backgroundImage: `url("https://res.cloudinary.com/dmixvynoo/image/upload/v1754750012/IMG-20250809-WA0200_j1qrzi.jpg")`,
         }}
@@ -28,18 +28,18 @@ function Contact() {
             <form className="flex flex-col gap-4">
               <input
                 type="text"
-                className="w-full bg-white p-3 rounded-md focus:outline-none focus:ring-2 focus:ring-green-600"
+                className="w-full bg-white p-3  focus:outline-none focus:ring-2 focus:ring-green-600"
                 placeholder="Your Name"
                 required
               />
               <input
                 type="email"
-                className="w-full bg-white p-3 rounded-md focus:outline-none focus:ring-2 focus:ring-green-600"
+                className="w-full bg-white p-3 focus:outline-none focus:ring-2 focus:ring-green-600"
                 placeholder="Email Address"
                 required
               />
               <textarea
-                className="w-full bg-white p-3 rounded-md h-32 resize-none focus:outline-none focus:ring-2 focus:ring-green-600"
+                className="w-full bg-white p-3 text-black h-32 resize-none focus:outline-none focus:ring-2 focus:ring-green-600"
                 placeholder="Message"
                 required
               ></textarea>
@@ -52,7 +52,6 @@ function Contact() {
             </form>
           </div>
 
-          
           <div className="w-full md:w-1/2 h-64 md:h-auto   overflow-hidden shadow-lg">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14164.222846389114!2d25.832241!3d-17.924444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1939f8b35a7f6c85%3A0x9f9b5c4b55a6f98!2sVictoria%20Falls!5e0!3m2!1sen!2szw!4v1691741052000!5m2!1sen!2szw"
