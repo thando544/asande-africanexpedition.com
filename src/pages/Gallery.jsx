@@ -11,18 +11,20 @@ function Gallery() {
         }}
       ></section>
       <div className=" flex flex-col text-center justify-center items-center pt-[4em] space-y-[2rem]">
-        <h1 className="text-green-900 md:text-6xl lg:text-6xl text-3xl border-dotted border-b-4 w-[30%] pb-[1rem] ">Gallery</h1>
+        <h1 className="text-green-900 md:text-6xl lg:text-6xl text-3xl border-dotted border-b-4 w-[30%] pb-[1rem] ">
+          Gallery
+        </h1>
         <p>
           Enjoy our full collection of images. All wildlife shots taken by Adam
           Jones in Hwange National Park
         </p>
-        <div className=" grid gap-2 sm:grid-cols-2 lg:grid-cols-3 p-[3em] ">
+        <div className=" grid gap-2 sm:grid-cols-2 lg:grid-cols-3 md:p-[3em] p-[1rem] ">
           {pictures.map((pictures) => (
             <div key={pictures.id}>
               <img
                 src={pictures.image}
                 alt="{picture.title}"
-                className="h-[320px] w-[450px] object-center object-cover"
+                className="h-[320px] md:w-[450px] lg:w-[450px] w-full object-center object-cover"
               />
             </div>
           ))}

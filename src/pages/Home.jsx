@@ -2,16 +2,17 @@ import React from "react";
 import Banner from "../components/Banner";
 import { Link } from "react-router-dom";
 import { tours } from "../utils/data";
+import WhyChooseUs from "../components/WhyChooseUs";
 
 function Home() {
   return (
     <>
-      <div className="  flex items-center justify-center w-full h-screen">
+     
         <Banner />
-      </div>
-      <section>
+
+      <section className="bg-[#f0f0f0] flex flex-col justify-center items-center text-center py-10">
         <div className="w-full flex flex-col justify-center md:items-center lg:items-center items-start md:h-[50vh] lg:h-[50vh] h-[70vh] pb-[3rem] text-center px-[2em] space-y-[1em]">
-          <h1 className="text-black text-[1.2rem]">About Us</h1>
+          <h1 className="text-black text-[1.2rem] font-bold">About Us</h1>
           <p className="md:text-center lg:text-center text-left">
             Being a safari guide, for more than 17years of experience in
             conducting walking safaris gives me the confidence for ensuring a
@@ -27,8 +28,8 @@ function Home() {
         </div>
       </section>
 
-      <section className="h-[100vh]">
-        <h1 className="pl-6 font-bold">Our Recent Activities</h1>
+      <section className="lg:h-[100vh] h-auto">
+        <h1 className="pl-6 font-bold text-[1.2rem] pt-2">Our Recent Activities</h1>
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 p-6">
           {tours.map((tour) => (
             <div
@@ -57,6 +58,8 @@ function Home() {
           ))}
         </div>
       </section>
+<WhyChooseUs />
+      
     </>
   );
 }

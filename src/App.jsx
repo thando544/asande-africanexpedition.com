@@ -9,6 +9,7 @@ import Testimonials from "./pages/Testimonials"
 import Contact from "./pages/Contact"
 import Navbar from "./components/Navbar"
 import TourDetails from './components/TourDetails'
+import Footer from "./components/Footer";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 function App() {
@@ -25,6 +26,7 @@ function App() {
         <Route path="testimonials" element={<Testimonials />} />
         <Route path="contact" element={<Contact />} />
       </Routes>
+      <Footer />
     </>
   );
 }

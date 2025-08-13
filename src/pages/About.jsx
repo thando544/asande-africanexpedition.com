@@ -6,7 +6,7 @@ function About() {
   return (
     <>
       <section
-        className="h-[75vh] w-full bg-center bg-cover bg-no-repeat"
+        className="h-[79vh] w-full bg-center bg-cover bg-no-repeat"
         style={{
           backgroundImage: `url("https://res.cloudinary.com/dmixvynoo/image/upload/v1754751728/IMG-20250809-WA0032_uurmzb.jpg")`,
         }}

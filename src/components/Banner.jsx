@@ -9,7 +9,7 @@ const settings = {
   slidesToShow: 1,
   slidesToScroll: 1,
   autoplay: true,
-  autoplaySpeed: 3000,
+  autoplaySpeed: 4000, 
   fade: true,
   pauseOnHover: false,
 };
@@ -18,19 +18,19 @@ const slides = [
   {
     id: 1,
     image:
-      "https://res.cloudinary.com/dmixvynoo/image/upload/v1754751729/IMG-20250809-WA0035_fovzjr.jpg",
+      "https://res.cloudinary.com/dmixvynoo/image/upload/v1754749957/IMG-20250809-WA0184_kqilio.jpg",
     text: "Discover Africa Like Never Before",
   },
 
   {
-    id: 1,
+    id: 2,
     image:
       "https://res.cloudinary.com/dmixvynoo/image/upload/v1754750187/IMG-20250809-WA0243_tupiy0.jpg",
     text: "Discover unforgettable destinations, unique cultures, and breathtaking adventures.",
   },
 
   {
-    id: 1,
+    id: 3,
     image:
       "https://res.cloudinary.com/dmixvynoo/image/upload/v1754749953/IMG-20250809-WA0172_mrrpzo.jpg",
   },
