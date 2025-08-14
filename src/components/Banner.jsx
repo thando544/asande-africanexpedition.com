@@ -1,3 +1,4 @@
+import { button } from "framer-motion/client";
 import React from "react";
 
 import Slider from "react-slick";
@@ -10,7 +11,7 @@ const settings = {
   slidesToScroll: 1,
   autoplay: true,
   autoplaySpeed: 4000, 
-  fade: true,
+  fade: false,
   pauseOnHover: false,
 };
 
@@ -20,6 +21,7 @@ const slides = [
     image:
       "https://res.cloudinary.com/dmixvynoo/image/upload/v1754749957/IMG-20250809-WA0184_kqilio.jpg",
     text: "Discover Africa Like Never Before",
+    button: "Explore More",
   },
 
   {
@@ -49,7 +51,11 @@ function Banner() {
               <h2 className="text-white text-xl sm:text-3xl md:text-3xl lg:text-3xl font-bold bg-black/50 px-4 sm:px-6 py-2 sm:py-4 rounded text-center max-w-[100%]">
                 {slide.text}
               </h2>
-              <button className="bg-red-700 w-[160px] h-[50px] rounded-[6px] cursor-pointer text-white">expore more</button>
+              {slide.button && (
+                <button className="bg-red-600 text-white px-6 py-2 rounded hover:bg-red-700 transition duration-300">
+                  {slide.button}
+                </button>
+              )}
             </div>
           </div>
         ))}

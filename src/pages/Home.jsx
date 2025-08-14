@@ -7,8 +7,7 @@ import WhyChooseUs from "../components/WhyChooseUs";
 function Home() {
   return (
     <>
-     
-        <Banner />
+      <Banner />
 
       <section className="bg-[#f0f0f0] flex flex-col justify-center items-center text-center py-10">
         <div className="w-full flex flex-col justify-center md:items-center lg:items-center items-start md:h-[50vh] lg:h-[50vh] h-[70vh] pb-[3rem] text-center px-[2em] space-y-[1em]">
@@ -21,7 +20,7 @@ function Home() {
           </p>
           <Link
             to="/about"
-            className="bg-red-700 h-[50px] w-[170px] text-white flex justify-center items-center hover:underline transition duration-550"
+            className="bg-red-700 h-[45px] w-[130px] text-white flex justify-center items-center hover:underline transition duration-550"
           >
             ReadMore
           </Link>
@@ -29,7 +28,9 @@ function Home() {
       </section>
 
       <section className="lg:h-[100vh] h-auto">
-        <h1 className="pl-6 font-bold text-[1.2rem] pt-2">Our Recent Activities</h1>
+        <h1 className="pl-6 font-bold text-[1.2rem] pt-2">
+          Our Recent Activities
+        </h1>
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 p-6">
           {tours.map((tour) => (
             <div
@@ -57,9 +58,17 @@ function Home() {
             </div>
           ))}
         </div>
+
+        <div className="w-full relative mt-[4rem]">
+          <Link
+            to="/activities"
+            className="absolute bottom-4 md:right-4 right-[30%] bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded"
+          >
+            View All Activities
+          </Link>
+        </div>
       </section>
-<WhyChooseUs />
-      
+      <WhyChooseUs />
     </>
   );
 }

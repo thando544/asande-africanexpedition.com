@@ -10,7 +10,7 @@ function Navbar() {
         <img
           src="https://res.cloudinary.com/dmixvynoo/image/upload/v1754755594/IMG-20250809-WA0269_mviipe-removebg-preview_uysk4f.png"
           alt="awande-african-logo"
-          className="w-[100px]"
+          className="w-[90px]"
         />
       </Link>
 
