@@ -5,7 +5,7 @@ export const tours = [
     title: "Victoria Falls Adventure",
     price: "$120",
     image:
-      "https://res.cloudinary.com/dmixvynoo/image/upload/v1754751729/IMG-20250809-WA0035_fovzjr.jpg",
+      "https://res.cloudinary.com/dmixvynoo/image/upload/v1755201875/vicfalls_txpjwc.jpg",
     description: "Experience the mighty falls up close with our expert guides.",
   },
   {

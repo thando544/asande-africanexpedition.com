@@ -1,5 +1,6 @@
 import React from 'react'
 import {pictures} from "../utils/data1"
+import { Link } from 'react-router-dom';
 
 function Gallery() {
   return (
@@ -9,10 +10,17 @@ function Gallery() {
         style={{
           backgroundImage: `url("https://res.cloudinary.com/dmixvynoo/image/upload/v1754749953/IMG-20250809-WA0174_xkc9bz.jpg")`,
         }}
-      ></section>
+      >
+        <div className="w-full h-full bg-black/50 flex flex-col justify-center items-center ">
+          <h3 className="text-[5rem] text-white">Our Gallery</h3>
+          <div className='flex justify-center items-center text-white text-lg'>
+            <Link to="/">Home</Link>/Gallery
+          </div>
+        </div>
+      </section>
       <div className=" flex flex-col text-center justify-center items-center pt-[4em] space-y-[2rem]">
-        <h1 className="text-green-900 md:text-6xl lg:text-6xl text-3xl border-dotted border-b-4 w-[30%] pb-[1rem] ">
-          Gallery
+        <h1 className="text-black md:text-6xl lg:text-6xl text-3xl border-dotted border-b-4 w-[50%] pb-[1rem] ">
+         From Our Gallery
         </h1>
         <p>
           Enjoy our full collection of images. All wildlife shots taken by Adam

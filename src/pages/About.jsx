@@ -6,71 +6,41 @@ function About() {
   return (
     <>
       <section
-        className="h-[79vh] w-full bg-center bg-cover bg-no-repeat"
+        className="h-[60vh] w-full bg-center bg-cover bg-no-repeat"
         style={{
-          backgroundImage: `url("https://res.cloudinary.com/dmixvynoo/image/upload/v1754751728/IMG-20250809-WA0032_uurmzb.jpg")`,
+          backgroundImage: `url("https://res.cloudinary.com/dmixvynoo/image/upload/v1755201840/vicfalls5_p7iohx.jpg")`,
         }}
       ></section>
-      <section className="p-6 bg-[#c9c1c1] min-h-screen flex flex-col items-center">
-        <h1 className="p-8 text-4xl md:text-6xl font-semibold text-green-900 border-b-4 border-dotted text-center">
-          About Us
-        </h1>
 
-        <p className="w-full md:w-[70%] text-center text-green-700 mt-4 text-base md:text-sm">
-          Awande is company based in Victoria Falls Zimbabwe onwed and run by a
-          Fully licened Professional Guide of Zimbabwe. A member of the
-          Professional Hunters and Guides Association (ZPGHA) of good standing
-          and an association thats upholds ethics to a high standard.
-        </p>
-
-        <div className="flex flex-col md:flex-row md:justify-between md:items-center w-full max-w-6xl mt-8 gap-6 md:gap-8">
-          <div className="w-full md:w-1/2 h-[250px] md:h-[400px]">
-            <img
-              src="https://res.cloudinary.com/dmixvynoo/image/upload/v1754749959/IMG-20250809-WA0199_xfqf6e.jpg"
-              alt="about us"
-              className="w-full h-full object-cover shadow-lg"
-            />
+      <section className="p-6 bg-[#ffffff] min-h-screen flex flex-col items-center">
+        <div className="flex items-center justify-center space-x-2">
+          <div className="bg-white shadow-lg p-6 text-center text-black font-bold">
+            <h1 className="text-2xl mb-2">Safety First</h1>
+            <p className="text-sm font-normal">
+              Every journey is guided with unwavering commitment to the safety
+              and comfort of our guests.
+            </p>
           </div>
 
-          <div className="w-full md:w-1/2 space-y-4">
-            <h2 className="text-2xl md:text-[2.5rem] font-semibold text-green-900">
-              Meet Your Guide - Bulisani Mathe
-            </h2>
-            <p className="text-base md:text-xs">
-              A wildlife photographer, story teller, nature enthusiasts and a
-              smile that lights up a room. Bulisani Mathe (Buli) is a
-              Professional Guide from Zimbabwe. Who has gone through the intense
-              training of the highest standards of Guiding in Africa. Having led
-              safaris in Tanzania, Botswana, Zambia, Namibia and of course
-              Zimbabwe at large. He has had the opportunity to lead walking
-              safaris of an epic manner the big areas of Zimbabwe, Hwange,
-              Gonarezhou, Manapools national parks just to mention a few. It has
-              always been his passion to understand nature, culture and share
-              the information in Africa and beyond.
+          <div className="bg-white shadow-lg p-6 text-center text-black font-bold">
+            <h1 className="text-2xl mb-2">Safety First</h1>
+            <p className="text-sm font-normal">
+              Every journey is guided with unwavering commitment to the safety
+              and comfort of our guests.
             </p>
-            <p className="text-base md:text-xs">
-              For almost two decades, he has indulged in research and
-              presentation on nature oriented talks that landed him roles, in
-              places like World Disneys Animal Kingdom Lodge as a Savanah Guide.
-              He was taught all his knowledge from experience with the well
-              known safari legends of Africa. Walking safari license are part of
-              his qualifications which he takes pride in conducting, with the
-              upmost details of ethics and enthusiasm. An interaction with him
-              will expose you to African culture, have an impact of a life time
-              and a deeper understanding of how nature's cycle works, perhaps
-              you may become a dung-ologist. There is no better way to sum up
-              any safari experience without the expertise of an all-round safari
-              guide like him.
+          </div>
+          <div className="bg-white shadow-lg p-6 text-center text-black font-bold">
+            <h1 className="text-2xl mb-2">Safety First</h1>
+            <p className="text-sm font-normal">
+              Every journey is guided with unwavering commitment to the safety
+              and comfort of our guests.
             </p>
           </div>
         </div>
-      </section>
-
-      <section className="p-6 bg-[#c9c1c1] min-h-screen flex flex-col items-center">
         <div className="flex flex-col md:flex-row md:justify-between md:items-center w-full max-w-6xl mt-8 gap-6 md:gap-8">
           <div className="w-full md:w-100 space-y-4">
-            <h2 className="text-2xl md:text-[2rem] font-semibold text-green-900">
-              Meet Your Guide - Adam Jones
+            <h2 className="text-2xl md:text-[2rem] font-semibold text-black">
+              About Us
             </h2>
             <p className="text-base md:text-lg lg:text-xs">
               Born and raised in Victoria Falls, it was during weekends at his
@@ -91,6 +61,56 @@ function About() {
               alt="about us"
               className="w-full h-full object-cover shadow-lg"
             />
+          </div>
+        </div>
+      </section>
+
+      <section className="p-6 bg-[#c9c1c1] min-h-screen flex flex-col items-center">
+    <div className="flex flex-col md:flex-row md:justify-between md:items-center w-full max-w-6xl mt-8 gap-6 md:gap-8">
+          <div className="w-full md:w-1/2 h-[250px] md:h-[400px]">
+            <img
+              src="https://res.cloudinary.com/dmixvynoo/image/upload/v1755206425/bulisani_cnyrxj.jpg"
+              alt="about us"
+              className="w-full h-full object-cover shadow-lg"
+            />
+          </div>
+
+          <div className="w-full md:w-1/2 space-y-4">
+            <h2 className="text-2xl md:text-[2.5rem] font-semibold text-black">
+              Meet Your Guide - Bulisani Mathe
+            </h2>
+            <p className="text-base md:text-xs">
+              At the heart of Awande Africa Expeditions is Bulisani “Buli ”
+              Mathe—a man whose smile can light up a room and whose passion for
+              the wild runs as deep as Africa’s rivers. A professional guide of
+              the highest calibre, Buli has undergone some of the most rigorous
+              and respected safari training on the continent. Over the years, he
+              has led unforgettable expeditions across Tanzania, Botswana,
+              Zambia, Namibia, and, most prominently, the vast and diverse
+              landscapes of Zimbabwe. With nearly two decades of guiding
+              experience, Bulisani has walked the great wildernesses of Hwange,
+              Gonarezhou, and Mana Pools National Parks, sharing close
+              encounters with Africa’s iconic wildlife while ensuring safety,
+              respect, and ethical conduct at every step. His expertise is
+              rooted in years of learning from some of Africa’s legendary
+              guides, blending technical skill with an innate ability to read
+              the land and its rhythms.
+            </p>
+            <p className="text-base md:text-xs">
+              Beyond guiding, Bulisan is a wildlife photographer, storyteller,
+              and cultural ambassador. His time as a Savannah Guide at Disney’s
+              Animal Kingdom Lodge in the USA gave him a global platform to
+              share Africa’s wonders, fostering curiosity and appreciation among
+              audiences from around the world. Whether on foot, in a vehicle, or
+              around a campfire, his stories bring the African bush to life
+              ;rich with knowledge, humour, and insight. To walk with Buli is to
+              see Africa through the eyes of someone who not only knows its
+              secrets but loves them deeply. You may leave with rare wildlife
+              sightings, a deeper cultural understanding, or even a newfound
+              appreciation for the humble yet fascinating art of “dung-ology.”
+              With him, every safari is more than a trip it’s a
+              life-shaping journey.
+            </p>
           </div>
         </div>
       </section>

@@ -1,5 +1,4 @@
 export const activities = [
-
   {
     id: 1,
     image:
@@ -22,11 +21,11 @@ export const activities = [
   {
     id: 3,
     image:
-      "https://res.cloudinary.com/dmixvynoo/image/upload/v1754749957/IMG-20250809-WA0186_ghxk1l.jpg",
+      "https://res.cloudinary.com/dmixvynoo/image/upload/v1754749959/IMG-20250809-WA0188_ksikob.jpg",
     title: "Bird Watching",
     price: "$100",
     description:
-      "Explore the world of birds with our bird watching activities. Perfect for enthusiasts and beginners alike, our guides will help you spot various species.",  
+      "Explore the world of birds with our bird watching activities. Perfect for enthusiasts and beginners alike, our guides will help you spot various species.",
   },
   {
     id: 4,
@@ -35,7 +34,7 @@ export const activities = [
     title: "Photography Tours",
     price: "$180",
     description:
-      "Capture stunning landscapes and wildlife with our photography tours. Ideal for photographers of all skill levels, our guides will help you find the best spots.",  
+      "Capture stunning landscapes and wildlife with our photography tours. Ideal for photographers of all skill levels, our guides will help you find the best spots.",
   },
   {
     id: 5,
@@ -43,9 +42,9 @@ export const activities = [
       "https://res.cloudinary.com/dmixvynoo/image/upload/v1754750012/IMG-20250809-WA0200_j1qrzi.jpg",
     title: "Camping Adventures",
     price: "$120",
-    
+
     description:
-      "Experience the great outdoors with our camping adventures. Enjoy the tranquility of nature while camping under the stars.",  
+      "Experience the great outdoors with our camping adventures. Enjoy the tranquility of nature while camping under the stars.",
   },
   {
     id: 6,
@@ -54,7 +53,7 @@ export const activities = [
     title: "Cultural Experiences",
     price: "$130",
     description:
-      "Immerse yourself in local culture with our cultural experiences. Learn about traditional practices and meet local communities.",  
+      "Immerse yourself in local culture with our cultural experiences. Learn about traditional practices and meet local communities.",
   },
 
   {
@@ -64,7 +63,6 @@ export const activities = [
     title: "Adventure Sports",
     price: "$250",
     description:
-      "Get your adrenaline pumping with our adventure sports activities. From rock climbing to white-water rafting, we have something for every thrill-seeker.",    
+      "Get your adrenaline pumping with our adventure sports activities. From rock climbing to white-water rafting, we have something for every thrill-seeker.",
   },
-
-]
+];

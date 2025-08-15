@@ -35,34 +35,22 @@ export default function WhyChooseUs() {
   ];
 
   return (
-    <section
-      className="relative bg-fixed bg-center bg-cover py-16 px-6 md:px-12"
-      style={{
-        backgroundImage:
-          "url('https://images.unsplash.com/photo-1605225227357-9cc6a273f8f4?auto=format&fit=crop&w=1470&q=80')", // Replace with your scenic image
-      }}
-    >
-      {/* Dark Overlay for Text Readability */}
-      <div className="absolute inset-0 bg-black bg-opacity-50"></div>
-
-      <div className="relative max-w-7xl mx-auto text-center text-white">
-        <h2 className="text-3xl md:text-4xl font-bold mb-4">Why Choose Us</h2>
-        <p className="max-w-2xl mx-auto mb-12 text-gray-200">
-          At Victoria Falls Tours, we go beyond sightseeing — we give you an
-          authentic, safe, and unforgettable journey into the heart of Africa’s
-          natural wonder.
+    <section className="bg-black text-white py-16 px-4">
+      <div className="max-w-6xl mx-auto text-center">
+        <h2 className="text-3xl font-bold mb-4">Why Choose Us</h2>
+        <p className="text-gray-300 mb-12 max-w-2xl mx-auto">
+          Experience Victoria Falls like never before. We combine local
+          knowledge, safety, and passion to create unforgettable adventures.
         </p>
-
-        {/* Features Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-          {features.map((item, index) => (
+          {features.map((feature, index) => (
             <div
               key={index}
-              className="p-6 bg-white bg-opacity-10 border border-white/20 rounded-lg shadow hover:shadow-lg transition"
+              className="flex flex-col items-center text-center space-y-4 p-6 border border-white/20 rounded-lg hover:bg-white hover:text-black transition duration-300"
             >
-              {item.icon}
-              <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
-              <p className="text-gray-200">{item.description}</p>
+              {feature.icon}
+              <h3 className="text-lg font-semibold">{feature.title}</h3>
+              <p className="text-sm text-gray-400">{feature.description}</p>
             </div>
           ))}
         </div>

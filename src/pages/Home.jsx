@@ -35,7 +35,7 @@ function Home() {
           {tours.map((tour) => (
             <div
               key={tour.id}
-              className="bg-white rounded-lg shadow-lg overflow-hidden"
+              className="bg-white  shadow-lg overflow-hidden"
             >
               <img
                 src={tour.image}
@@ -50,7 +50,7 @@ function Home() {
                 </p>
                 <Link
                   to={`/tour/${tour.id}`}
-                  className="mt-4 inline-block bg-red-600 hover:bg-red-700 text-white px-4 py-2 hover:underline rounded"
+                  className="mt-4 inline-block bg-red-600 hover:bg-red-700 text-white px-4 py-2 hover:underline "
                 >
                   View Details
                 </Link>
@@ -59,16 +59,11 @@ function Home() {
           ))}
         </div>
 
-        <div className="w-full relative mt-[4rem]">
-          <Link
-            to="/activities"
-            className="absolute bottom-4 md:right-4 right-[30%] bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded"
-          >
-            View All Activities
-          </Link>
-        </div>
       </section>
       <WhyChooseUs />
+      <section className="bg-[#f0f0f0] flex flex-col justify-center items-center text-center py-10 h-[70vh]">
+
+      </section>
     </>
   );
 }

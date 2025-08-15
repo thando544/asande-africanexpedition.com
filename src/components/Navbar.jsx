@@ -5,7 +5,7 @@ function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-[#001d00] flex justify-between items-center w-full px-[2rem] h-[14vh] sticky top-0 z-50 ">
+    <nav className=" flex backdrop:blur-2xl bg-black/90 h-[13vh] justify-between items-center w-full px-[2rem] py-2 fixed  top-0 z-50 ">
       <Link to="/">
         <img
           src="https://res.cloudinary.com/dmixvynoo/image/upload/v1754755594/IMG-20250809-WA0269_mviipe-removebg-preview_uysk4f.png"
@@ -15,14 +15,14 @@ function Navbar() {
       </Link>
 
       <button
-        className="text-white text-3xl bg-[#001d00] md:hidden"
+        className="text-white text-3xl md:hidden"
         onClick={() => setIsOpen(!isOpen)}
       >
         ☰
       </button>
 
       <ul
-        className={`flex-col md:flex-row md:flex items-center justify-center space-x-0 md:space-x-4 text-white text-[1.2rem] font-semibold absolute md:static top-[80px] left-0 w-full md:w-auto bg-[#001d00] md:bg-[#001d00] z-90 transition-all duration-300 ease-in-out ${
+        className={`flex-col md:flex-row md:flex items-center justify-center md:bg-transparent lg:bg-transparent md:py-0 lg:py-0 py-3 bg-black/100 space-x-0 md:space-x-4 text-orange-400 text-[1.2rem] font-semibold absolute md:static top-[107px] left-0 w-full md:w-auto z-90 transition-all duration-300 ease-in-out ${
           isOpen ? "flex" : "hidden"
         }`}
       >
