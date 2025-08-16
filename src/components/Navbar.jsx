@@ -46,11 +46,7 @@ function Navbar() {
             Gallery
           </Link>
         </li>
-        <li className="p-2 md:p-0">
-          <Link to="/testimonials" onClick={() => setIsOpen(false)}>
-            Testimonials
-          </Link>
-        </li>
+     
         <li className="p-2 md:p-0">
           <Link to="/contact" onClick={() => setIsOpen(false)}>
             Contact Us
