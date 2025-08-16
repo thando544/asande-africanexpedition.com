@@ -12,7 +12,7 @@ function Gallery() {
         }}
       >
         <div className="w-full h-full bg-black/50 flex flex-col justify-center items-center ">
-          <h3 className="text-[5rem] text-white">Our Gallery</h3>
+          <h3 className="md:text-[5rem] lg:text-[5rem] text-[2rem] text-white">Our Gallery</h3>
           <div className='flex justify-center items-center text-white text-lg'>
             <Link to="/">Home</Link>/Gallery
           </div>
