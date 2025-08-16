@@ -3,6 +3,7 @@ import Banner from "../components/Banner";
 import { Link } from "react-router-dom";
 import { tours } from "../utils/data";
 import WhyChooseUs from "../components/WhyChooseUs";
+import Testimonials from "../components/Testimonials";
 
 function Home() {
   return (
@@ -58,9 +59,7 @@ function Home() {
 
       </section>
       <WhyChooseUs />
-      <section className="bg-[#f0f0f0] flex flex-col justify-center items-center text-center py-10 h-[70vh]">
-
-      </section>
+    <Testimonials />
     </>
   );
 }

@@ -32,6 +32,7 @@ function ImageSlider() {
           breakpoint: 480,
           settings: {
             dots: false,
+            navigator: false,
             slidesToShow: 1,
             slidesToScroll: 1,
           },
