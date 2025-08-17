@@ -1,77 +1,25 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import ImageSlider from "../components/ImageSlider";
+import SafetySection from "../components/SafetySection";
 
 function About() {
   return (
     <>
       <section
-        className="h-[60vh] w-full bg-center bg-cover bg-no-repeat"
+        className="h-[70vh] w-full bg-center bg-cover bg-no-repeat"
         style={{
           backgroundImage: `url("https://res.cloudinary.com/dmixvynoo/image/upload/v1755201840/vicfalls5_p7iohx.jpg")`,
         }}
       ></section>
-
-      <section className="p-6 bg-[#ffffff] min-h-screen flex flex-col items-center">
-        <div className="flex items-center justify-center space-x-2">
-          <div className="bg-white shadow-lg p-6 text-center text-black font-bold">
-            <h1 className="text-2xl mb-2">Safety First</h1>
-            <p className="text-sm font-normal">
-              Every journey is guided with unwavering commitment to the safety
-              and comfort of our guests.
-            </p>
-          </div>
-
-          <div className="bg-white shadow-lg p-6 text-center text-black font-bold">
-            <h1 className="text-2xl mb-2">Safety First</h1>
-            <p className="text-sm font-normal">
-              Every journey is guided with unwavering commitment to the safety
-              and comfort of our guests.
-            </p>
-          </div>
-          <div className="bg-white shadow-lg p-6 text-center text-black font-bold">
-            <h1 className="text-2xl mb-2">Safety First</h1>
-            <p className="text-sm font-normal">
-              Every journey is guided with unwavering commitment to the safety
-              and comfort of our guests.
-            </p>
-          </div>
-        </div>
-        <div className="flex flex-col md:flex-row md:justify-between md:items-center w-full max-w-6xl mt-8 gap-6 md:gap-8">
-          <div className="w-full md:w-100 space-y-4">
-            <h2 className="text-2xl md:text-[2rem] font-semibold text-black">
-              About Us
-            </h2>
-            <p className="text-base md:text-lg lg:text-xs">
-              Born and raised in Victoria Falls, it was during weekends at his
-              father’s camp on the Zambezi River and family camping trips in
-              Hwange, that Adam’s fascination for wildlife and passion for the
-              Zimbabwean bush began to grow. After ten years in the industry, he
-              has built up an extensive knowledge base and gained invaluable
-              experience within many of Zimbabwe’s National Parks. Inzila is an
-              extension of Adam’s fervent passion, and it gives him great pride
-              to share with you the hidden gems which he has discovered over the
-              years working in Hwange National Park.
-            </p>
-          </div>
-
-          <div className="w-full md:w-1/1 h-[250px] md:h-[600px]">
-            <img
-              src="https://res.cloudinary.com/dmixvynoo/image/upload/v1754749959/IMG-20250809-WA0199_xfqf6e.jpg"
-              alt="about us"
-              className="w-full h-full object-cover shadow-lg"
-            />
-          </div>
-        </div>
-      </section>
-
+      <SafetySection />
       <section className="p-6 bg-[#c9c1c1] min-h-screen flex flex-col items-center">
-    <div className="flex flex-col md:flex-row md:justify-between md:items-center w-full max-w-6xl mt-8 gap-6 md:gap-8">
-          <div className="w-full md:w-1/2 h-[250px] md:h-[400px]">
+        <div className="flex flex-col md:flex-row md:justify-between md:items-center w-full max-w-6xl mt-8 gap-6 md:gap-8">
+          <div className="w-full md:w-1/2 h-[250px] md:h-[400px] flex items-center justify-center ">
             <img
               src="https://res.cloudinary.com/dmixvynoo/image/upload/v1755206425/bulisani_cnyrxj.jpg"
               alt="about us"
-              className="w-full h-full object-cover shadow-lg"
+              className="max-h-full max-w-full object-contain"
             />
           </div>
 
@@ -126,7 +74,7 @@ function About() {
         >
           Explore More Images
         </Link>
-        <div className="w-full max-w-6xl mt-8">
+        <div className="w-full max-w-6xl mt-8 ">
           <ImageSlider />
         </div>
       </section>

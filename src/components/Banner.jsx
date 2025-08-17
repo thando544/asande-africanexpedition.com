@@ -38,7 +38,7 @@ const slides = [
   {
     id: 3,
     image:
-      "https://res.cloudinary.com/dmixvynoo/image/upload/v1755284761/Home_Gallery4_806x530_fb3hyv.webp",
+      "https://res.cloudinary.com/dmixvynoo/image/upload/v1754749953/IMG-20250809-WA0172_mrrpzo.jpg",
   },
 ];
 
