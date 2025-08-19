@@ -27,6 +27,7 @@ const slides = [
     image:
       "https://res.cloudinary.com/dmixvynoo/image/upload/v1755285396/lion-1.4a2c3415_uvcjn4.webp",
     text: "Discover Africa Like Never Before",
+    button: "explore more"
   },
 
   {

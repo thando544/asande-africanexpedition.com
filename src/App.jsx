@@ -4,7 +4,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Activities from "./pages/Activities";
 import Gallery from "./pages/Gallery";
-
+import BookingForm from "./components/BookingForm";
 import Contact from "./pages/Contact";
 import Navbar from "./components/Navbar";
 import TourDetails from "./components/TourDetails";
@@ -22,6 +22,7 @@ function App() {
         <Route path="activities" element={<Activities />} />
         <Route path="gallery" element={<Gallery />} />
         <Route path="contact" element={<Contact />} />
+        <Route path="/booking/:id" element={<BookingForm />} />
       </Routes>
       <Footer />
     </>

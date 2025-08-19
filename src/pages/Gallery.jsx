@@ -19,7 +19,7 @@ function Gallery() {
         </div>
       </section>
       <div className=" flex flex-col text-center justify-center items-center pt-[4em] space-y-[2rem]">
-        <h1 className="text-black md:text-6xl lg:text-6xl text-3xl border-dotted border-b-4 w-[50%] pb-[1rem] ">
+        <h1 className="text-black md:text-6xl lg:text-6xl text-3xl w-[50%] pb-[1rem] ">
          From Our Gallery
         </h1>
         <p>

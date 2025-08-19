@@ -22,7 +22,7 @@ function Navbar() {
       </button>
 
       <ul
-        className={`flex-col md:flex-row md:flex items-center justify-center md:bg-transparent lg:bg-transparent md:py-0 lg:py-0 py-3 bg-black/100 space-x-0 md:space-x-4 text-orange-400 text-[1.2rem] font-semibold absolute md:static top-[107px] left-0 w-full md:w-auto z-90 transition-all duration-300 ease-in-out ${
+        className={`flex-col md:flex-row md:flex items-center justify-center md:bg-transparent lg:bg-transparent md:py-0 lg:py-0 py-3 bg-black/70 space-x-0 md:space-x-4 text-orange-400 text-[1.2rem] font-semibold absolute md:static top-[107px] left-0 w-full md:w-auto z-90 transition-all duration-300 ease-in-out ${
           isOpen ? "flex" : "hidden"
         }`}
       >
