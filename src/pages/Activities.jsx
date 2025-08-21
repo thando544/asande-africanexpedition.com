@@ -10,53 +10,62 @@ const activities = [
   },
   {
     id: 2,
-    name: "White-water Rafting",
-    category: "Adventure",
-    image:
-      "https://res.cloudinary.com/dmixvynoo/image/upload/v1755614309/IMG-20250818-WA0039_kqqcfs.jpg",
-  },
-  {
-    id: 3,
-    name: "Helicopter Flight (Flight of Angels)",
-    category: "Adventure",
-    image:
-      "https://res.cloudinary.com/dmixvynoo/image/upload/v1755614308/IMG-20250818-WA0040_t8frmu.jpg",
-  },
-  {
-    id: 4,
-    name: "Zambezi Sunset Cruise",
+    name: "Devil's Pool",
     category: "Water",
     image:
-      "https://res.cloudinary.com/dmixvynoo/image/upload/v1755614307/IMG-20250818-WA0042_lkgfea.jpg",
+      "https://res.cloudinary.com/dmixvynoo/image/upload/v1755614299/IMG-20250818-WA0056_ffj100.jpg",
   },
   {
     id: 5,
-    name: "Canoeing on Upper Zambezi",
-    category: "Water",
+    name: "Zip Line",
+    category: "Adventure",
     image:
       "https://res.cloudinary.com/dmixvynoo/image/upload/v1755614307/IMG-20250818-WA0041_kax5pg.jpg",
   },
   {
+    id: 11,
+    name: "Gorge Swing",
+    category: "Adventure",
+    image:
+      "https://res.cloudinary.com/dmixvynoo/image/upload/v1755614299/IMG-20250818-WA0054_odg1is.jpg",
+  },
+
+  {
+    id: 3,
+    name: "Overnight Camping",
+    category: "Safari",
+    image:
+      "https://res.cloudinary.com/dmixvynoo/image/upload/v1755614301/IMG-20250818-WA0050_treavf.jpg",
+  },
+  {
+    id: 4,
+    name: "Hwange National Park",
+    category: "Safari",
+    image:
+      "https://res.cloudinary.com/dmixvynoo/image/upload/v1755614307/IMG-20250818-WA0042_lkgfea.jpg",
+  },
+  {
     id: 6,
-    name: "Game Drive (Zambezi National Park)",
+    name: "Overnight Camping",
     category: "Safari",
     image:
       "https://res.cloudinary.com/dmixvynoo/image/upload/v1755614301/IMG-20250818-WA0049_llmtti.jpg",
   },
   {
     id: 7,
-    name: "Walking Safari",
-    category: "Safari",
+    name: "Sunset Cruise",
+    category: "Water",
     image:
       "https://res.cloudinary.com/dmixvynoo/image/upload/v1755614306/IMG-20250818-WA0043_uizcsz.jpg",
   },
   {
     id: 8,
-    name: "Chobe Day Trip (Botswana)",
+    name: "Matopos National Park",
     category: "Safari",
     image:
       "https://res.cloudinary.com/dmixvynoo/image/upload/v1755614306/IMG-20250818-WA0045_rt8pqr.jpg",
   },
+
   {
     id: 9,
     name: "Village Cultural Tour",
@@ -64,19 +73,13 @@ const activities = [
     image:
       "https://res.cloudinary.com/dmixvynoo/image/upload/v1755614306/IMG-20250818-WA0045_rt8pqr.jpg",
   },
+
   {
     id: 10,
-    name: "Zip Line",
+    name: "Victoria Falls Zip Line",
     category: "Falls",
     image:
       "https://res.cloudinary.com/dmixvynoo/image/upload/v1755614306/IMG-20250818-WA0044_lmfrfz.jpg",
-  },
-  {
-    id: 11,
-    name: "Gorge Swing",
-    category: "Falls",
-    image:
-      "https://res.cloudinary.com/dmixvynoo/image/upload/v1755614299/IMG-20250818-WA0054_odg1is.jpg",
   },
 ];
 
@@ -117,7 +120,7 @@ export default function ActivitiesPage() {
         {filteredActivities.map((activity) => (
           <div
             key={activity.id}
-            className="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-lg transition"
+            className="bg-white shadow-md  overflow-hidden hover:shadow-lg transition"
           >
             <img
               src={activity.image}

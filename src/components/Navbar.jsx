@@ -5,7 +5,7 @@ function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className=" flex backdrop:blur-2xl bg-black/90 h-[13vh] justify-between items-center w-full px-[2rem] py-2 fixed  top-0 z-50 ">
+    <nav className=" flex backdrop:blur-2xl bg-black/60 h-[13vh] justify-between items-center w-full px-[2rem] py-2 fixed  top-0 z-50 ">
       <Link to="/">
         <img
           src="https://res.cloudinary.com/dmixvynoo/image/upload/v1754755594/IMG-20250809-WA0269_mviipe-removebg-preview_uysk4f.png"

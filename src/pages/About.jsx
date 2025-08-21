@@ -11,7 +11,7 @@ function About() {
   return (
     <>
       <section
-        className="h-[60vh] w-full bg-center bg-cover bg-no-repeat"
+        className="h-[80vh] w-full bg-center bg-cover bg-no-repeat"
         style={{
           backgroundImage: `url("https://res.cloudinary.com/dmixvynoo/image/upload/v1755201840/vicfalls5_p7iohx.jpg")`,
         }}

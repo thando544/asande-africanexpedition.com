@@ -1,70 +1,34 @@
-import { button, nav } from "framer-motion/client";
 import React from "react";
 import { Link } from "react-router-dom";
-import "slick-carousel/slick/slick.css";
-import Slider from "react-slick";
-import CustomArrow from "./CustomArrow";
-
-const settings = {
-  dots: false,
-  Infinity: true,
-  speed: 900,
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  autoplay: true,
-  autoplaySpeed: 4000,
-  fade: true,
-  navigation: true,
-  arrows: true,
-  pauseOnHover: false,
-  nextArrow: <CustomArrow direction="next" />,
-  prevArrow: <CustomArrow direction="prev" />,
-};
-
-const slides = [
-  {
-    id: 1,
-    image:
-      "https://res.cloudinary.com/dmixvynoo/image/upload/v1755285396/lion-1.4a2c3415_uvcjn4.webp",
-    text: "Discover Africa Like Never Before",
-    button: "explore more"
-  },
-
-  {
-    id: 2,
-    image:
-      "https://res.cloudinary.com/dmixvynoo/image/upload/v1755282904/shearwater-heli-2.d28936d5_jfmt37.webp",
-  },
-
-  {
-    id: 3,
-    image:
-      "https://res.cloudinary.com/dmixvynoo/image/upload/v1754749953/IMG-20250809-WA0172_mrrpzo.jpg",
-  },
-];
 
 function Banner() {
   return (
-    <div className="w-full md:h-screen lg:h-screen h-[80vh] relative ">
-      <Slider {...settings}>
-        {slides.map((slide) => (
-          <div key={slide.id}>
-            <div
-              className="w-full md:h-screen lg:h-screen h-[80vh] bg-center bg-cover flex flex-col space-y-2 items-center    justify-center"
-              style={{ backgroundImage: `url(${slide.image})` }}
-            >
-              <h2 className="text-white text-xl sm:text-3xl md:text-3xl lg:text-3xl font-semibold px-4 sm:px-6 py-2 sm:py-4 rounded text-center max-w-[100%]">
-                {slide.text}
-              </h2>
-              {slide.button && (
-                <Link to="/gallery" className="bg-red-600 text-white px-6 py-2 rounded hover:bg-red-700 transition duration-300">
-                  {slide.button}
-                </Link>
-              )}
-            </div>
-          </div>
-        ))}
-      </Slider>
+    <div className="w-full h-[90vh] md:h-screen relative overflow-hidden">
+      <video
+        className="absolute inset-0 w-full h-full object-cover"
+        src="https://res.cloudinary.com/dmixvynoo/video/upload/v1755761680/Pinterest_Business_Profiles_Now_Include_Dynamic_Cover_Images__Monthly_Viewers__Video___Video____Cool_pictures_of_nature__Beautiful_scenery_nature__Ama_if4lrc.mp4"
+        autoPlay
+        loop
+        muted
+        playsInline
+      ></video>
+
+      <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/40 to-black/90"></div>
+
+      <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-4 space-y-6">
+        <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-white drop-shadow-lg leading-tight">
+          Awande African Expeditions
+        </h1>
+        <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-gray-200 font-medium max-w-3xl drop-shadow-md">
+          Explore amazing activities and adventures with us!
+        </p>
+        <Link
+          to="/activities"
+          className="bg-red-700 hover:bg-red-800 text-white text-lg md:text-xl font-semibold px-8 py-3 rounded-full shadow-lg transform hover:scale-105 transition duration-300 ease-in-out"
+        >
+          Explore Now
+        </Link>
+      </div>
     </div>
   );
 }
