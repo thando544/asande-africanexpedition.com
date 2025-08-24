@@ -8,7 +8,6 @@ dotenv.config();
 
 const app = express();
 
-
 app.use(helmet());
 app.use(express.json());
 
@@ -25,7 +24,5 @@ app.use("/api/bookings", bookingsRouter);
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () =>
-  console.log(
-    `Server running on https://asande-africanexpedition.vercel.app/:${PORT}`
-  )
+  console.log(`Server running on http://localhost:${PORT}`)
 );

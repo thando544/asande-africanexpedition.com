@@ -9,25 +9,25 @@ import {
 export default function WhyChooseUs() {
   const features = [
     {
-      icon: <FaMapMarkedAlt className="text-yellow-400 text-5xl mb-4" />,
+      icon: <FaMapMarkedAlt className="text-green-900 text-5xl mb-4" />,
       title: "Expert Local Guides",
       description:
         "Our experienced guides know every hidden gem of Victoria Falls, ensuring an unforgettable adventure.",
     },
     {
-      icon: <FaCameraRetro className="text-yellow-400 text-5xl mb-4" />,
+      icon: <FaCameraRetro className="text-green-900 text-5xl mb-4" />,
       title: "Scenic Adventures",
       description:
         "We take you to the most picturesque spots, perfect for breathtaking photos and lasting memories.",
     },
     {
-      icon: <FaUserTie className="text-yellow-400 text-5xl mb-4" />,
+      icon: <FaUserTie className="text-green-900 text-5xl mb-4" />,
       title: "Personalized Experience",
       description:
         "We tailor each tour to your interests, so you get the most out of your visit.",
     },
     {
-      icon: <FaUmbrellaBeach className="text-yellow-400 text-5xl mb-4" />,
+      icon: <FaUmbrellaBeach className="text-green-900 text-5xl mb-4" />,
       title: "Comfort & Safety",
       description:
         "From pick-up to drop-off, we prioritize your comfort, safety, and enjoyment.",
