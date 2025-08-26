@@ -24,7 +24,7 @@ async function ensureStorage() {
 const BookingSchema = z.object({
   activityId: z.number(),
   activityName: z.string().min(2),
-  date: z.string().min(8), // YYYY-MM-DD
+  date: z.string().min(8),
   people: z.number().int().min(1).max(20),
   name: z.string().min(2),
   email: z.string().email(),
