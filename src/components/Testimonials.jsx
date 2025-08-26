@@ -43,13 +43,13 @@ export default function Testimonials() {
             key={testimonial.id}
             className="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition duration-300"
           >
-            <FaQuoteLeft className="text-red-600 text-2xl mb-3" />
+            <FaQuoteLeft className="text-black-600 text-2xl mb-3" />
             <p className="text-gray-700 italic mb-4">"{testimonial.text}"</p>
             <div className="flex items-center gap-4">
               <img
                 src={testimonial.img}
                 alt={testimonial.name}
-                className="w-14 h-14 rounded-full object-cover border-2 border-red-500"
+                className="w-14 h-14 rounded-full object-cover  "
               />
               <div>
                 <h4 className="font-semibold text-gray-800">
