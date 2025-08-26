@@ -35,16 +35,19 @@ export default function BookingForm() {
     e.preventDefault();
 
  
-    const res = await fetch("http://localhost:5000/api/bookings", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        activityId: activity.id,
-        activityName: activity.name,
-        ...form,
-        people: Number(form.people),
-      }),
-    });
+    const res = await fetch(
+      "https://asande-africanexpedition.vercel.app/bookings",
+      {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          activityId: activity.id,
+          activityName: activity.name,
+          ...form,
+          people: Number(form.people),
+        }),
+      }
+    );
 
     const data = await res.json();
     if (res.ok) {
