@@ -22,7 +22,7 @@ export default function BookingForm() {
     name: "",
     email: "",
     date: "",
-    people: 1, 
+    people: 1,
   });
 
   const [confirmed, setConfirmed] = useState(null);
@@ -34,7 +34,6 @@ export default function BookingForm() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
- 
     const res = await fetch(
       "https://asande-africanexpedition.vercel.app/bookings",
       {
@@ -51,7 +50,7 @@ export default function BookingForm() {
 
     const data = await res.json();
     if (res.ok) {
-      setConfirmed(data.booking); 
+      setConfirmed(data.booking);
     } else {
       alert("Booking failed: " + (data.message || "Unknown error"));
     }
@@ -80,58 +79,60 @@ export default function BookingForm() {
   }
 
   return (
-    <div className="max-w-xl mx-auto p-6 bg-white shadow-md py-[7em] rounded-lg">
-      <h2 className="text-2xl font-semibold mb-4">
-        Book: {activity?.name || "Activity"}
-      </h2>
-      <form onSubmit={handleSubmit} className="space-y-4">
-        <input
-          type="text"
-          name="name"
-          placeholder="Your Full Name"
-          value={form.name}
-          onChange={handleChange}
-          required
-          className="w-full p-3 border rounded-lg"
-        />
-        <input
-          type="email"
-          name="email"
-          placeholder="Your Email"
-          value={form.email}
-          onChange={handleChange}
-          required
-          className="w-full p-3 border rounded-lg"
-        />
-        <input
-          type="date"
-          name="date"
-          value={form.date}
-          onChange={handleChange}
-          required
-          className="w-full p-3 border rounded-lg"
-        />
+    <>
+      <div className="h-screen flex items-center justify-center w-full">
+        <div className="max-w-xl mx-auto  p-6 bg-white shadow-lg shadow-black rounded-lg">
+          <h2 className="text-2xl font-semibold mb-4">
+            Book: {activity?.name || "Activity"}
+          </h2>
+          <form onSubmit={handleSubmit} className="space-y-4">
+            <input
+              type="text"
+              name="name"
+              placeholder="Your Full Name"
+              value={form.name}
+              onChange={handleChange}
+              required
+              className="w-full p-3 border rounded-lg"
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="Your Email"
+              value={form.email}
+              onChange={handleChange}
+              required
+              className="w-full p-3 border rounded-lg"
+            />
+            <input
+              type="date"
+              name="date"
+              value={form.date}
+              onChange={handleChange}
+              required
+              className="w-full p-3 border rounded-lg"
+            />
 
-    
-        <input
-          type="number"
-          name="people"
-          min="1"
-          max="20"
-          value={form.people}
-          onChange={handleChange}
-          required
-          className="w-full p-3 border rounded-lg"
-        />
+            <input
+              type="number"
+              name="people"
+              min="1"
+              max="20"
+              value={form.people}
+              onChange={handleChange}
+              required
+              className="w-full p-3 border rounded-lg"
+            />
 
-        <button
-          type="submit"
-          className="w-full bg-red-600 text-white py-3 rounded-lg hover:bg-red-700"
-        >
-          Confirm Booking
-        </button>
-      </form>
-    </div>
-    
+            <button
+              type="submit"
+              className="w-full bg-red-600 text-white py-3 rounded-lg hover:bg-red-700"
+            >
+              Confirm Booking
+            </button>
+          </form>
+        </div>
+      </div>
+    </>
   );
 }
