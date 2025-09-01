@@ -28,11 +28,11 @@ function Home() {
         </div>
       </section>
 
-      <section className="lg:h-[100vh] h-auto">
+      <section className="lg:h-[69vh] pt-[12px]  h-auto ">
         <h1 className="pl-6 font-bold text-[1.2rem] pt-2">
           Our Recent Activities
         </h1>
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 p-6">
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 p-6 ">
           {tours.map((tour) => (
             <div
               key={tour.id}

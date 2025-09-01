@@ -11,11 +11,9 @@ const app = express();
 app.use(helmet());
 app.use(express.json());
 
-// Allow multiple origins (local + Vercel)
 const allowedOrigins = [
-  "http://localhost:5173",
-   "https://asande-africanexpedition.vercel.app" ,
-  process.env.CLIENT_ORIGIN, 
+  "http://localhost:5173/api/bookings",
+  "https://booking-frontend-five.vercel.app",
 ];
 
 app.use(
@@ -32,12 +30,10 @@ app.use(
   })
 );
 
-// Health check
 app.get("/health", (_req, res) => res.json({ ok: true }));
 
-// Routes
 app.use("/api/bookings", bookingsRouter);
 
-// Start server
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 5000;
+
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));

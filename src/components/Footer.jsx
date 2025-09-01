@@ -56,7 +56,7 @@ export default function Footer() {
               <FaMapMarkerAlt /> Victoria Falls, Zimbabwe
             </li>
             <li className="flex items-center gap-2">
-              <FaPhone /> +263 77 123 4567
+              <FaPhone /> +263 77 572 8413
             </li>
             <li className="flex items-center gap-2">
               <FaEnvelope /> res@awandeafricaexpeditions.com

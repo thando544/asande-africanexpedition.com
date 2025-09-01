@@ -1,17 +1,20 @@
 import { useParams } from "react-router-dom";
 import { useState } from "react";
+import.meta.env.VITE_API_URL;
 
 const activities = [
-  { id: 1, name: "Bungee Jumping" },
-  { id: 2, name: "White-water Rafting" },
-  { id: 3, name: "Helicopter Flight (Flight of Angels)" },
-  { id: 4, name: "Zambezi Sunset Cruise" },
-  { id: 5, name: "Canoeing on Upper Zambezi" },
-  { id: 6, name: "Game Drive (Zambezi National Park)" },
-  { id: 7, name: "Walking Safari" },
-  { id: 8, name: "Chobe Day Trip (Botswana)" },
-  { id: 9, name: "Village Cultural Tour" },
-  { id: 10, name: "Victoria Falls Guided Tour" },
+  { id: 2, name: "Devil's Pool" },
+  { id: 3, name: "Game Drive" },
+  { id: 4, name: "Sunrise cruise" },
+  { id: 5, name: "Dinner cruise" },
+  { id: 6, name: "Bush dinner" },
+  { id: 7, name: "Helicopter Flight" },
+  { id: 8, name: "Walking Safari" },
+  { id: 9, name: "Chobe Day Trip" },
+  { id: 10, name: "Walking safari" },
+  { id: 11, name: "Bird Watching" },
+  { id: 12, name: "Night Drive" },
+  { id: 13, name: "Cultural Tour" },
 ];
 
 export default function BookingForm() {
@@ -30,13 +33,11 @@ export default function BookingForm() {
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
-
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const res = await fetch(
-      "https://asande-africanexpedition.vercel.app/bookings",
-      {
+    try {
+          const res = await fetch("http://localhost:5000/api/bookings", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -45,14 +46,18 @@ export default function BookingForm() {
           ...form,
           people: Number(form.people),
         }),
-      }
-    );
+      });
 
-    const data = await res.json();
-    if (res.ok) {
-      setConfirmed(data.booking);
-    } else {
-      alert("Booking failed: " + (data.message || "Unknown error"));
+
+      const data = await res.json();
+
+      if (res.ok) {
+        setConfirmed(data.booking);
+      } else {
+        alert("Booking failed: " + (data.message || "Unknown error"));
+      }
+    } catch (error) {
+      alert("Network error: " + error.message);
     }
   };
 
