@@ -1,17 +1,35 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import { useForm, ValidationError } from "@formspree/react";
 
 function Contact() {
+  const [state, handleSubmit] = useForm("mandllry");
+  if (state.succeeded) {
+      return (
+<div className="bg-white text-white w-full h-screen flex items-center justify-center">
+<div className="bg-black w-[400px] h-[200px] text-center flex items-center justify-center">
+<h1>Thank you for submitting your review</h1>
+</div>
+</div>
+      );
+  }
+
+
   return (
     <>
       <section
-        className="h-[75vh] w-full bg-center bg-cover bg-no-repeat"
+        className="h-[85vh] w-full bg-center bg-cover bg-no-repeat"
         style={{
-          backgroundImage: `url("https://res.cloudinary.com/dmixvynoo/image/upload/v1754750012/IMG-20250809-WA0200_j1qrzi.jpg")`,
+          backgroundImage: `url("https://res.cloudinary.com/dmixvynoo/image/upload/v1756716602/pexels-kelly-16241875_juwenm.jpg")`,
         }}
-      ></section>
+      >
+        <div className="flex justify-center items-center text-white text-lg h-full w-full bg-black/50">
+          <Link to="/">Home</Link>/Contact
+        </div>
+      </section>
 
       <section className="p-6 bg-[#c9c1c1] min-h-screen flex flex-col items-center">
-        <h1 className="text-green-900 border-dotted border-b-4 border-green-900 w-fit text-4xl md:text-5xl text-center py-4">
+        <h1 className="text-green-900  w-fit text-4xl md:text-5xl text-center py-4">
           Contact Us
         </h1>
         <p className="text-green-700 text-center max-w-2xl mt-2">
@@ -22,26 +40,39 @@ function Contact() {
         <div className="flex flex-col md:flex-row w-full max-w-6xl mt-8 gap-6">
           <div className="flex flex-col w-full md:w-1/2 bg-[#bbb4b4] p-6  shadow-lg">
             <h2 className="text-green-900 text-2xl mb-4">Send Us A Message</h2>
-            <form className="flex flex-col gap-4">
+            <form
+              className="flex flex-col gap-4"
+             onSubmit={handleSubmit}
+              method="POST"
+            >
               <input
                 type="text"
                 className="w-full bg-white p-3  focus:outline-none focus:ring-2 focus:ring-green-600"
                 placeholder="Your Name"
                 required
+                name="name"
               />
               <input
+                id="email"
                 type="email"
+                name="email"
                 className="w-full bg-white p-3 focus:outline-none focus:ring-2 focus:ring-green-600"
                 placeholder="Email Address"
                 required
               />
+                 <ValidationError 
+        prefix="Email" 
+        field="email"
+        errors={state.errors}
+      />
               <textarea
                 className="w-full bg-white p-3 text-black h-32 resize-none focus:outline-none focus:ring-2 focus:ring-green-600"
                 placeholder="Message"
-                required
+                required=""
+                name="message"
               ></textarea>
               <button
-                type="submit"
+                type="submit" disabled={state.submitting}
                 className="bg-green-800 text-white py-3 px-6  w-[190px] hover:bg-green-900 transition duration-300"
               >
                 Send Message

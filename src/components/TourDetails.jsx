@@ -1,15 +1,24 @@
 import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import { tours } from "../utils/data";
+import { useForm, ValidationError } from "@formspree/react";
 
 export default function TourDetails() {
   const { id } = useParams();
   const tour = tours.find((t) => t.id === parseInt(id));
 
-  const [modalState, setModalState] = useState("closed"); 
+  const [modalState, setModalState] = useState("closed");
 
   if (!tour) {
     return <p className="p-6">Tour not found.</p>;
+  }
+  const [state, handleSubmit] = useForm("mandllry");
+  if (state.succeeded) {
+    return <div className="bg-white text-white w-full h-screen flex items-center justify-center">
+<div className="bg-black w-[400px] h-[200px] text-center flex items-center justify-center">
+<h1>Thank you for submitting your review</h1>
+</div>
+</div>
   }
 
   return (
@@ -32,21 +41,23 @@ export default function TourDetails() {
         </button>
       </div>
 
-
       {modalState === "open" && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
           <div className="bg-white rounded-lg shadow-lg w-[90%] max-w-lg p-6">
             <h2 className="text-2xl font-bold mb-4">Book Your Tour</h2>
 
             <form
-              onSubmit={(e) => {
-                e.preventDefault();
-                alert("Booking confirmed!");
-                setModalState("closed");
-              }}
+              // onSubmit={(e) => {
+              //   e.preventDefault();
+              //   alert("Booking confirmed!");
+              //   setModalState("closed");
+              // }}
+              onSubmit={handleSubmit}
             >
               <label className="block mb-2 font-semibold">Name</label>
               <input
+                id="name"
+                name="name"
                 type="text"
                 className="w-full border rounded px-3 py-2 mb-4"
                 required
@@ -54,9 +65,16 @@ export default function TourDetails() {
 
               <label className="block mb-2 font-semibold">Email</label>
               <input
+                id="email"
                 type="email"
+                name="email"
                 className="w-full border rounded px-3 py-2 mb-4"
                 required
+              />
+              <ValidationError
+                prefix="Email"
+                field="email"
+                errors={state.errors}
               />
 
               <label className="block mb-2 font-semibold">Date</label>
@@ -76,6 +94,7 @@ export default function TourDetails() {
                 </button>
                 <button
                   type="submit"
+                  disabled="state.sumbitted"
                   className="px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700"
                 >
                   Confirm Booking
