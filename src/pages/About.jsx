@@ -16,24 +16,21 @@ function About() {
           backgroundImage: `url("https://res.cloudinary.com/dmixvynoo/image/upload/v1755201840/vicfalls5_p7iohx.jpg")`,
         }}
       ></section>
-<SafetySection/>
+      <SafetySection />
       <section className="p-6 bg-[#ffffff] min-h-screen flex flex-col items-center">
-       
         <div className="flex flex-col md:flex-row md:justify-between md:items-center w-full max-w-6xl mt-8 gap-6 md:gap-8">
           <div className="w-full md:w-100 space-y-4">
             <h2 className="text-2xl md:text-[2rem] font-semibold text-black">
               About Us
             </h2>
             <p className="text-base md:text-lg lg:text-xs">
-              Born and raised in Victoria Falls, it was during weekends at his
-              father’s camp on the Zambezi River and family camping trips in
-              Hwange, that Adam’s fascination for wildlife and passion for the
-              Zimbabwean bush began to grow. After ten years in the industry, he
-              has built up an extensive knowledge base and gained invaluable
-              experience within many of Zimbabwe’s National Parks. Inzila is an
-              extension of Adam’s fervent passion, and it gives him great pride
-              to share with you the hidden gems which he has discovered over the
-              years working in Hwange National Park.
+              As Awande African Expeditions we desire to inspire you with a deep
+              connection with nature by offering exceptional, immersive
+              experiences that celebrate the rich biodiversity and cultural
+              heritage of the African wilderness. We envision a world where
+              every traveler leaves with unforgettable memories, a greater
+              appreciation for wildlife conservation, and a commitment to
+              protecting these magnificent landscapes for future generations
             </p>
           </div>
 
@@ -62,39 +59,47 @@ function About() {
             </h2>
 
             <p className="text-base md:text-xs w-full">
-              At the heart of Awande Africa Expeditions is Bulisani “Buli ”
-              Mathe—a man whose smile can light up a room and whose passion for
-              the wild runs as deep as Africa’s rivers. A professional guide of
-              the highest calibre, Buli has undergone some of the most rigorous
-              and respected safari training on the continent. Over the years, he
-              has led unforgettable expeditions across Tanzania, Botswana,
-              Zambia, Namibia, and, most prominently, the vast and diverse
-              landscapes of Zimbabwe. With nearly two decades of guiding
-              experience, Bulisani has walked the great wildernesses of Hwange,
-              Gonarezhou, and Mana Pools National Parks, sharing close
-              encounters with Africa’s iconic wildlife while ensuring safety,
-              respect, and ethical conduct at every step.{" "}
+              A wildlife photographer, story teller, nature enthusiasts and a
+              smile that lights up a room. Bulisani Mathe (Buli) is a
+              Professional Guide from Zimbabwe. Who has gone through the intense
+              training of the highest standards of Guiding in Africa. Having led
+              safaris in Tanzania, Botswana, Zambia, Namibia and of course
+              Zimbabwe at large. He has had the opportunity to lead walking
+              safaris of an epic manner the big areas of Zimbabwe, Hwange,
+              Gonarezhou, Manapools national parks just to mention a few. It has
+              always been his passion to understand nature, culture and share
+              the information in Africa and beyond.
               {!isExpanded && <span className="text-gray-600">... </span>}
             </p>
 
             {isExpanded && (
               <p className="text-base md:text-xs">
-                His expertise is rooted in years of learning from some of
-                Africa’s legendary guides, blending technical skill with an
-                innate ability to read the land and its rhythms. Beyond guiding,
-                Bulisan is a wildlife photographer, storyteller, and cultural
-                ambassador. His time as a Savannah Guide at Disney’s Animal
-                Kingdom Lodge in the USA gave him a global platform to share
-                Africa’s wonders, fostering curiosity and appreciation among
-                audiences from around the world. Whether on foot, in a vehicle,
-                or around a campfire, his stories bring the African bush to
-                life; rich with knowledge, humour, and insight. To walk with
-                Buli is to see Africa through the eyes of someone who not only
-                knows its secrets but loves them deeply. You may leave with rare
-                wildlife sightings, a deeper cultural understanding, or even a
-                newfound appreciation for the humble yet fascinating art of
-                “dung-ology.” With him, every safari is more than a trip — it’s
-                a life-shaping journey.
+                For almost two decades, he has indulged in research and
+                presentation on nature oriented talks that landed him roles, in
+                places like World Disneys Animal Kingdom Lodge as a Savanah
+                Guide. He was taught all his knowledge from experience with the
+                well known safari legends of Africa. Walking safari license are
+                part of his qualifications which he takes pride in conducting,
+                with the upmost details of ethics and enthusiasm. An interaction
+                with him will expose you to African culture, have an impact of a
+                life time and a deeper understanding of how nature's cycle
+                works, perhaps you may become a dung-ologist. There is no better
+                way to sum up any safari experience without the expertise of an
+                all-round safari guide like him. Sources [1] Conservation in
+                Zimbabwe: A Nat Hab Guide Story
+                https://www.youtube.com/watch?v=gqhOcB2B5YI [2] Sustainable
+                safari living at Mpala Jena
+                https://www.travelweekly.com/Middle-East-Africa-Travel/Sustainable-safari-living-at-Mpala-Jena
+                [3] Bulisani Mathe - Managing Director - Awande African ...
+                https://zw.linkedin.com/in/bulisani-mathe-a9571677 [4] Bulisani
+                Mathe https://www.facebook.com/bulisani.mathe/?locale=mt_MT [5]
+                Bulisani Mathe Email & Phone Number | Natural Habitat ...
+                https://rocketreach.co/bulisani-mathe-email_200701715 [6]
+                Natural Habitat Adventures
+                https://twitter.com/NatHab/status/1613190765449994242 [7]
+                Bulisani Mathe (@bulisanimathe)
+                https://www.instagram.com/bulisanimathe/ [8] Bulisani Mathe
+                https://www.facebook.com/bulisani.mathe/?locale=cy_GB
               </p>
             )}
 
